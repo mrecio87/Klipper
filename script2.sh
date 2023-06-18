@@ -31,4 +31,4 @@ git filter-repo --force --index-filter \
 #git rm -rf --cached "$parent_path"/.env
 git add "$parent_path"
 git commit -m "New backup from $(date +"%d-%m-%y")"
-git fetch https://"$github_token"@github.com/"$github_username"/"$github_repository".git
+git pull https://"$github_token"@github.com/"$github_username"/"$github_repository".git
